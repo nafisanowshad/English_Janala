@@ -29,11 +29,12 @@
 </head>
 
 <body>
-    <header>
-        <div class="navbar bg-[#BADEFF]/16 shadow-sm">
-            <div class="navbar-start">
-                <div class="dropdown sm:hidden">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+    <!-- header -->
+    <header class="bg-sky-50">
+        <div class="navbar max-w-7xl w-11/12 mx-auto">
+            <div class="navbar-start ">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -41,75 +42,114 @@
                         </svg>
                     </div>
                     <ul tabindex="-1"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li>
-                            <a href="" class=""><i class="fa-solid fa-circle-question"></i>FAQ</a>
-                        </li>
-                        <li>
-                            <a href="" class=""><i class="fa-brands fa-leanpub"></i>Learn</a>
-                        </li>
-                        <li>
-                            <a href="" class=""><i class="fa-solid fa-arrow-right-from-bracket"></i>LogOut</a>
-                        </li>
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow space-y-5">
+                        <li><a class="btn btn-outline btn-primary">
+                                <i class="fa-solid fa-circle-question"></i>
+                                FAQ</a></li>
+                        <li><a class="btn btn-outline btn-primary">
+                                <i class="fa-solid fa-book-open"></i>
+                                Learn</a></li>
+                        <li><a class="btn btn-outline btn-primary">
+                                <i class="fa-solid fa-right-from-bracket"></i>Log out</a></li>
                     </ul>
                 </div>
-                <a href="" class="flex items-center gap-1">
-                    <span class="text-lg font-bold">English</span>
-                    <img src="./assets/logo.png" alt="">
-                    <span class="font-bangla text-lg font-semibold">জানালা</span>
+                <a href="#" class="flex items-center gap-1 text-xl ">
+                    <span class="font-bold text-2xl">English</span>
+                    <img class="h-10 w-10" src="./assets/logo.png" alt="">
+                    <span class="hind-siliguri-bangla text-2xl font-semibold">জানালা</span>
                 </a>
             </div>
-            <div class="navbar-end lg:flex hidden sm:block">
-                <ul class="menu menu-horizontal px-1 sm:space-x-1 md:space-x-4 ">
-                    <li>
-                        <a href="" class="btn btn-outline btn-primary"><i
-                                class="fa-solid fa-circle-question"></i>FAQ</a>
-                    </li>
-                    <li>
-                        <a href="" class="btn btn-outline btn-primary"><i class="fa-brands fa-leanpub"></i>Learn</a>
-                    </li>
-                    <li>
-                        <a href="" class="btn btn-outline btn-primary"><i
-                                class="fa-solid fa-arrow-right-from-bracket"></i>LogOut</a>
-                    </li>
+            <div class="navbar-end hidden md:flex">
+                <ul class="menu menu-horizontal px-1 space-x-5">
+                    <li><a class="btn btn-outline btn-primary">
+                            <i class="fa-solid fa-circle-question"></i>
+                            FAQ</a></li>
+                    <li><a class="btn btn-outline btn-primary">
+                            <i class="fa-solid fa-book-open"></i>
+                            Learn</a></li>
+                    <li><a class="btn btn-outline btn-primary">
+                            <i class="fa-solid fa-right-from-bracket"></i>Log out</a></li>
                 </ul>
             </div>
-
         </div>
     </header>
 
-    <section class="flex flex-col-reverse md:flex-row gap-10 justify-between items-center py-5 w-11/12 mx-auto">
-        <div class="content flex-1 text-center md:text-left">
-            <h2 class="text-4xl font-bold mb-8"><span class="text-sky-400">English</span> is Easy!!</h2>
-            <p class="font-bangla">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে
-                চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+
+    <!-- Banner -->
+    <section class="max-w-7xl w-11/12 mx-auto mt-9 flex flex-col-reverse md:flex-row justify-between gap-20 items-center">
+        <div class="flex-1 space-y-6 text-center">
+            <h1 class="text-4xl font-bold text-black/80"><span class="text-sky-400">English</span> is Easy!!</h1>
+            <p class="hind-siliguri-bangla text-2xl  font-medium">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি
+                নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের
+                Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+
+            <div class="flex flex-col gap-5 justify-between items-center">
+                <input type="text" placeholder="Type Your name"
+                    class="border rounded-md border-black/50 focus:outline-0 p-2 w-[50%]">
+                <input type="password" name="" id="" placeholder="*********"
+                    class="border rounded-md border-black/50 focus:outline-0 p-2 w-[50%]">
+            </div>
         </div>
-        <div class="image flex-1">
-            <img src="./assets/hero-student.png" alt="">
+        <div class="flex-1">
+            <img src="./assets/hero-student.png" alt="" class="md:w-full md:h-full w-[220px]">
+        </div>
+    </section>
+
+
+
+
+    <!-- Lessions Sections -->
+    <section class="space-y-8 mt-9">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-black/80"><span class="text-sky-500"> Let's
+                </span>Learn vocabularies
+            </h1>
+        </div>
+        <div id="lessions" class="flex justify-center gap-3 flex-wrap my-10">
+
         </div>
     </section>
 
-    <section>
-        <h2 class="text-4xl font-bold mb-8 text-center"><span class="text-sky-400">Let's</span> Learn Vocabularies</h2>
+    <!-- Search -->
 
-        <div id="level-container" class="flex gap-5 flex-wrap justify-center"></div>
-    </section>
+    <div class="join flex justify-center my-5">
+        <div>
+            <label
+                class="input validator join-item border border-gray-300 border-r-sky-600 focus-within:outline-none focus-within:border-sky-700">
+                <input type="text" placeholder="Search" id="inputSearch" required />
+            </label>
+        </div>
+        <button id="searchBtn" class="btn btn-primary btn-outline join-item ">Search</button>
+    </div>
 
-    <section id="word-container" class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-cols-3 gap-5">
+    <div class="flex max-w-7xl mx-auto justify-evenly">
+        <div class="flex justify-center items-center">
+            <p class="font-bold text-sky-600">Total words: </p>
+            <p id="count" class="py-2 px-4 ">0</p>
+        </div>
+    </div>
 
-        <div class="text-center col-span-full rounded-xl py-10 space-y-6 font-bangla">
-            <p class="text-xl font-medium text-gray-400">আপনি এখনো কোন Lesson Select করেন নি</p>
-            <h2 class="font-bold text-4xl">একটি Lesson Select করুন।</h2>
+    <!-- Loading -->
+    <div id="spinner" class="flex items-center justify-center py-10 hidden">
+        <span class="loading loading-spinner text-info h-10 w-10"></span>
+    </div>
+    <!-- Word Card -->
+    <section id="wordContainer" class="bg-sky-50 p-5  max-w-7xl mx-auto md:grid md:grid-cols-3 lg:grid-cols-4 mb-5">
+        <div class="text-center col-span-full space-y-7 hind-siliguri-bangla lg:py-16">
+            <p class="text-2xl font-bold text-black/50">আপনি এখনও কোনো Lesson select করেননি</p>
+            <p class="text-4xl font-bold text-black/80">একটি Lesson Select করুন।</p>
         </div>
     </section>
+
+
+    <!-- modal -->
 
     <!-- Open the modal using ID.showModal() method -->
     <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
-
-     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
         <div class="modal-box">
-            <h3 class="text-lg font-bold">Hello!</h3>
-            <p class="py-4">Press ESC key or click the button below to close</p>
+            <div id="details">
+            </div>
             <div class="modal-action">
                 <form method="dialog">
                     <!-- if there is a button in form, it will close the modal -->
@@ -118,6 +158,101 @@
             </div>
         </div>
     </dialog>
+
+
+    <!-- FAQ -->
+
+    <section class="mx-auto max-w-7xl mt-20 lg:mt-28 px-4 hind-siliguri-bangla w-full">
+        <div class="text-center mb-10 ">
+            <h1 class="text-4xl font-bold text-black/80"><span class="text-sky-500"> Frequently </span>
+                Asked Questions</h1>
+        </div>
+    </section>
+    <section class="max-w-7xl  w-11/12 mx-auto">
+        <div class="join max-w-5xl join-vertical w-full bg-base-100 shadow-md border border-gray-200">
+            <div class="collapse collapse-arrow join-item border-b border-gray-200">
+                <input type="radio" name="faq-accordion" checked="checked" />
+                <div class="collapse-title text-xl font-medium text-gray-700">
+                    How can I start learning vocabulary here?
+                </div>
+                <div class="collapse-content text-gray-600">
+                    <p>Simply select a Lesson from the top menu. Each lesson contains a list of words. You can click the
+                        "info" icon to see the detailed meaning, synonyms, and example sentences for each word.</p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow join-item border-b border-gray-200">
+                <input type="radio" name="faq-accordion" />
+                <div class="collapse-title text-xl font-medium text-gray-700">
+                    How does the "Sound" button work?
+                </div>
+                <div class="collapse-content text-gray-600">
+                    <p>The sound button uses text-to-speech technology to help you hear the correct pronunciation of the
+                        word. It's a great way to improve your speaking and listening skills simultaneously.</p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow join-item border-b border-gray-200">
+                <input type="radio" name="faq-accordion" />
+                <div class="collapse-title text-xl font-medium text-gray-700">
+                    What does the "Complete Learning" button do?
+                </div>
+                <div class="collapse-content text-gray-600">
+                    <p>Once you feel confident about a word's meaning and usage, you can click "Complete Learning." This
+                        is
+                        designed to help you mentally track which words you've mastered in a session.</p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow join-item">
+                <input type="radio" name="faq-accordion" />
+                <div class="collapse-title text-xl font-medium text-gray-700">
+                    Are there different levels of difficulty?
+                </div>
+                <div class="collapse-content text-gray-600">
+                    <p>Yes! Our lessons are organized by level numbers. Level 1 usually starts with basic everyday
+                        words,
+                        while higher levels introduce more complex and academic vocabulary.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer class="footer bg-sky-100 text-primary-content p-10 mt-10">
+        <div class="flex flex-col md:flex-row justify-between items-center w-full max-w-7xl mx-auto gap-8">
+
+            <div class="footer-left text-center lg:text-left">
+                <a href="#" class="block">
+                    <div class="flex items-center justify-center lg:justify-start gap-1">
+                        <span class="font-bold text-[16px] text-[#18181B]">English</span>
+                        <img class="h-8 w-8" src="./assets/logo.png" alt="logo">
+                        <span class="hind-siliguri-bangla font-semibold text-[16px] text-[#000000]">জানালা</span>
+                    </div>
+                    <div class="hind-siliguri-bangla text-xs font-medium text-[#546A7F] mt-1">ইংরেজি শিখুন সহজে</div>
+                    <div class="text-[#546A7F] text-xs">Providing ED-Tech Applications since 2025</div>
+                </a>
+            </div>
+
+            <div class="footer-right flex flex-col items-center">
+                <div class="text-[#18181B] font-semibold text-[15px]">Follow us</div>
+                <div class="flex gap-5 p-2">
+                    <a href="#" class="hover:opacity-80">
+                        <i class="fa-brands fa-facebook bg-black text-white rounded-full"></i>
+                    </a>
+                    <a href="#" class="hover:opacity-80">
+                        <i class="fa-brands fa-twitter bg-black text-white rounded-full"></i>
+                    </a>
+                    <a href="#" class="hover:opacity-80">
+                        <i class="fa-brands fa-youtube bg-black text-white rounded-full"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
 
     <script src="./script/index.js"></script>
 </body>
